@@ -25,18 +25,18 @@
  * Do not edit the class manually.
  */
 
-namespace cbdesk\ebay_fullfilment;
+namespace cbdesk\ebay_fullfilment\Api;
 
+use cbdesk\ebay_fullfilment\ApiException;
+use cbdesk\ebay_fullfilment\Configuration;
+use cbdesk\ebay_fullfilment\HeaderSelector;
+use cbdesk\ebay_fullfilment\ObjectSerializer;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use cbdesk\ebay_fullfilment\ApiException;
-use cbdesk\ebay_fullfilment\Configuration;
-use cbdesk\ebay_fullfilment\HeaderSelector;
-use cbdesk\ebay_fullfilment\ObjectSerializer;
 
 /**
  * OrderApi Class Doc Comment
