@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace cbdesk\ebay_fullfilment\;
+namespace cbdesk\ebay_fullfilment;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
