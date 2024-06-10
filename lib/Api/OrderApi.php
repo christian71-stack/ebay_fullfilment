@@ -96,7 +96,7 @@ class OrderApi
      * @throws \InvalidArgumentException
      * @return \cbdesk\ebay_fullfilment\Model\Order
      */
-    public function getOrder($field_groups = null, $order_id)
+    public function getOrder(string $field_groups = null, $order_id)
     {
         list($response) = $this->getOrderWithHttpInfo($field_groups, $order_id);
         return $response;
@@ -112,7 +112,7 @@ class OrderApi
      * @throws \InvalidArgumentException
      * @return array of \cbdesk\ebay_fullfilment\Model\Order, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getOrderWithHttpInfo($field_groups = null, $order_id)
+    public function getOrderWithHttpInfo(string $field_groups = null, $order_id)
     {
         $returnType = '\cbdesk\ebay_fullfilment\Model\Order';
         $request = $this->getOrderRequest($field_groups, $order_id);
@@ -187,7 +187,7 @@ class OrderApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getOrderAsync($field_groups = null, $order_id)
+    public function getOrderAsync(string $field_groups = null, $order_id)
     {
         return $this->getOrderAsyncWithHttpInfo($field_groups, $order_id)
             ->then(
@@ -208,7 +208,7 @@ class OrderApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getOrderAsyncWithHttpInfo($field_groups = null, $order_id)
+    public function getOrderAsyncWithHttpInfo(string $field_groups = null, $order_id)
     {
         $returnType = '\cbdesk\ebay_fullfilment\Model\Order';
         $request = $this->getOrderRequest($field_groups, $order_id);
@@ -259,7 +259,7 @@ class OrderApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function getOrderRequest($field_groups = null, $order_id)
+    protected function getOrderRequest(string $field_groups = null, $order_id)
     {
         // verify the required parameter 'order_id' is set
         if ($order_id === null || (is_array($order_id) && count($order_id) === 0)) {
