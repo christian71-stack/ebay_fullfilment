@@ -178,7 +178,7 @@ class LineItemProperties implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['buyer_protection'] = isset($data['buyer_protection']) ? $data['buyer_protection'] : null;
         $this->container['from_best_offer'] = isset($data['from_best_offer']) ? $data['from_best_offer'] : null;

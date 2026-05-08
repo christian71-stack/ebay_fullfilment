@@ -178,7 +178,7 @@ class TaxIdentifier implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['taxpayer_id'] = isset($data['taxpayer_id']) ? $data['taxpayer_id'] : null;
         $this->container['tax_identifier_type'] = isset($data['tax_identifier_type']) ? $data['tax_identifier_type'] : null;

@@ -173,7 +173,7 @@ class LegacyReference implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['legacy_item_id'] = isset($data['legacy_item_id']) ? $data['legacy_item_id'] : null;
         $this->container['legacy_transaction_id'] = isset($data['legacy_transaction_id']) ? $data['legacy_transaction_id'] : null;

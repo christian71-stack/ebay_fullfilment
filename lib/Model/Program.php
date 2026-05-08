@@ -188,7 +188,7 @@ class Program implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['authenticity_verification'] = isset($data['authenticity_verification']) ? $data['authenticity_verification'] : null;
         $this->container['ebay_shipping'] = isset($data['ebay_shipping']) ? $data['ebay_shipping'] : null;

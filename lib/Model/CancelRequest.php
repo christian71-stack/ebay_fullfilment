@@ -193,7 +193,7 @@ class CancelRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['cancel_completed_date'] = isset($data['cancel_completed_date']) ? $data['cancel_completed_date'] : null;
         $this->container['cancel_initiator'] = isset($data['cancel_initiator']) ? $data['cancel_initiator'] : null;

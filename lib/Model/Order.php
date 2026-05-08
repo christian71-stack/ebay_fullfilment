@@ -263,7 +263,7 @@ class Order implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['buyer'] = isset($data['buyer']) ? $data['buyer'] : null;
         $this->container['buyer_checkout_notes'] = isset($data['buyer_checkout_notes']) ? $data['buyer_checkout_notes'] : null;

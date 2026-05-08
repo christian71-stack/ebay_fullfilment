@@ -178,7 +178,7 @@ class Buyer implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['tax_address'] = isset($data['tax_address']) ? $data['tax_address'] : null;
         $this->container['tax_identifier'] = isset($data['tax_identifier']) ? $data['tax_identifier'] : null;

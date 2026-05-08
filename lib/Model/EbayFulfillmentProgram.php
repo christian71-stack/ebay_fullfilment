@@ -168,7 +168,7 @@ class EbayFulfillmentProgram implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['fulfilled_by'] = isset($data['fulfilled_by']) ? $data['fulfilled_by'] : null;
     }

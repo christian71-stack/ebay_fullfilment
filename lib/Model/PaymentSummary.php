@@ -178,7 +178,7 @@ class PaymentSummary implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['payments'] = isset($data['payments']) ? $data['payments'] : null;
         $this->container['refunds'] = isset($data['refunds']) ? $data['refunds'] : null;

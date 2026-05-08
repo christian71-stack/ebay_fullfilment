@@ -188,7 +188,7 @@ class DisputeAmount implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['converted_from_currency'] = isset($data['converted_from_currency']) ? $data['converted_from_currency'] : null;
         $this->container['converted_from_value'] = isset($data['converted_from_value']) ? $data['converted_from_value'] : null;

@@ -173,7 +173,7 @@ class Refund implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['refund_id'] = isset($data['refund_id']) ? $data['refund_id'] : null;
         $this->container['refund_status'] = isset($data['refund_status']) ? $data['refund_status'] : null;

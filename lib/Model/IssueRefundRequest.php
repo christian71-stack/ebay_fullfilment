@@ -183,7 +183,7 @@ class IssueRefundRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['reason_for_refund'] = isset($data['reason_for_refund']) ? $data['reason_for_refund'] : null;
         $this->container['comment'] = isset($data['comment']) ? $data['comment'] : null;
