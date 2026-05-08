@@ -188,7 +188,7 @@ class EvidenceRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['evidence_id'] = isset($data['evidence_id']) ? $data['evidence_id'] : null;
         $this->container['evidence_type'] = isset($data['evidence_type']) ? $data['evidence_type'] : null;

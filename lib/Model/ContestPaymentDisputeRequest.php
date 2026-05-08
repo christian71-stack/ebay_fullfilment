@@ -173,7 +173,7 @@ class ContestPaymentDisputeRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['return_address'] = isset($data['return_address']) ? $data['return_address'] : null;
         $this->container['revision'] = isset($data['revision']) ? $data['revision'] : null;

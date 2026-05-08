@@ -258,7 +258,7 @@ class PaymentDispute implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
         $this->container['available_choices'] = isset($data['available_choices']) ? $data['available_choices'] : null;

@@ -178,7 +178,7 @@ class DeliveryCost implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['import_charges'] = isset($data['import_charges']) ? $data['import_charges'] : null;
         $this->container['shipping_cost'] = isset($data['shipping_cost']) ? $data['shipping_cost'] : null;

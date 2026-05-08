@@ -183,7 +183,7 @@ class LineItemFulfillmentInstructions implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['guaranteed_delivery'] = isset($data['guaranteed_delivery']) ? $data['guaranteed_delivery'] : null;
         $this->container['max_estimated_delivery_date'] = isset($data['max_estimated_delivery_date']) ? $data['max_estimated_delivery_date'] : null;

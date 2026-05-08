@@ -178,7 +178,7 @@ class PaymentDisputeActivity implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['activity_date'] = isset($data['activity_date']) ? $data['activity_date'] : null;
         $this->container['activity_type'] = isset($data['activity_type']) ? $data['activity_type'] : null;

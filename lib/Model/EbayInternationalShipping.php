@@ -168,7 +168,7 @@ class EbayInternationalShipping implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['returns_managed_by'] = isset($data['returns_managed_by']) ? $data['returns_managed_by'] : null;
     }

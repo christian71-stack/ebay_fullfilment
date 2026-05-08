@@ -178,7 +178,7 @@ class CancelStatus implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['cancelled_date'] = isset($data['cancelled_date']) ? $data['cancelled_date'] : null;
         $this->container['cancel_requests'] = isset($data['cancel_requests']) ? $data['cancel_requests'] : null;

@@ -173,7 +173,7 @@ class InfoFromBuyer implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['note'] = isset($data['note']) ? $data['note'] : null;
         $this->container['return_shipment_tracking'] = isset($data['return_shipment_tracking']) ? $data['return_shipment_tracking'] : null;

@@ -193,7 +193,7 @@ class PaymentHold implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['expected_release_date'] = isset($data['expected_release_date']) ? $data['expected_release_date'] : null;
         $this->container['hold_amount'] = isset($data['hold_amount']) ? $data['hold_amount'] : null;
